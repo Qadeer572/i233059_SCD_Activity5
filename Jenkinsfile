@@ -8,7 +8,8 @@ pipeline {
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'main')
         string(name: 'BUILD_ENV', defaultValue: 'dev')
-        string(name: 'STUDENT_NAME', defaultValue: 'Qadeer Raza')  
+        string(name: 'STUDENT_NAME', defaultValue: 'Qadeer Raza') // your name
+    }
 
     environment {
         APP_VERSION = "1.0.0"
@@ -56,5 +57,4 @@ pipeline {
             echo 'Pipeline failed.'
         }
     }
-}
 }
